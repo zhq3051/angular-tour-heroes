@@ -1,10 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
 
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 
 @Injectable()
 export class HeroService {
+  private herosURL = 'api/heroes';
+
+  constructor(private http: Http) { }
+
   getHeroes(): Promise<Hero[]> {
     return Promise.resolve(HEROES);
   }
