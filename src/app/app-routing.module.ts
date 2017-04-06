@@ -21,7 +21,7 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'detail/:id',
+        path: 'detail/:id/:foo',
         component: HeroDetailComponent
     }
 ];
