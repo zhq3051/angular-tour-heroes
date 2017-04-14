@@ -18,7 +18,7 @@ import { AppComponent } from './app.component';
 import { HeroService } from './hero.service';
 import {HeroSearchComponent} from './hero-search.component';
 
-
+import { ProductModule } from "./product/product.module";
 
 @NgModule({
   imports: [
@@ -26,6 +26,7 @@ import {HeroSearchComponent} from './hero-search.component';
     FormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
+    ProductModule,
     AppRoutingModule
   ],
   declarations: [
